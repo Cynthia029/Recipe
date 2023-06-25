@@ -2,7 +2,7 @@ package com.example.recipe.data
 
 import java.io.Serializable
 
-data class Recipe (
+data class Recipe(
     val id: Int,
     val title: String,
     val type:String,
