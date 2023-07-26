@@ -1,6 +1,6 @@
 package com.example.recipe.data
 
-import com.example.recipe.R
+import com.example.recipeapp.R
 
 object DataProvider{
     val recipeList = listOf(
@@ -35,13 +35,13 @@ object DataProvider{
         ),
         Recipe(
             id = 2,
-            title ="Biryani",
+            title ="Burger",
             type = "Lunch",
             people = "Serves 4 people",
             difficultyLevel ="Beginner",
             ingredients = "",
             preparation = "",
-            recipeImageId = R.drawable.biryani
+            recipeImageId = R.drawable.burger
         ),
         Recipe(
             id = 3,
@@ -51,7 +51,7 @@ object DataProvider{
             difficultyLevel ="Beginner",
             ingredients = "",
             preparation = "",
-            recipeImageId = R.drawable.eggs
+            recipeImageId = R.drawable.srambledeggs
         ),
         Recipe(
             id = 4,
@@ -65,25 +65,14 @@ object DataProvider{
         ),
         Recipe(
             id = 5,
-            title ="Bhajia",
+            title ="Chapati",
             type = "Dinner",
             people = "Serves 5 people",
             difficultyLevel ="Intermediate",
             ingredients = "",
             preparation = "",
-            recipeImageId = R.drawable.bhajia
-        ),
-        Recipe(
-            id = 6,
-            title ="Chapati",
-            type = "Dinner",
-            people = "Serves 10 people",
-            difficultyLevel ="Intermediate",
-            ingredients = "",
-            preparation = "",
             recipeImageId = R.drawable.chapati
+
         ),
-
         )
-
 }

@@ -1,47 +1,39 @@
 package com.example.recipe.ui.theme
 
 
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.lightColorScheme
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Shapes
+import androidx.compose.material.darkColors
+import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 
-private val DarkColorScheme = darkColorScheme(
+private val DarkColorPallete = darkColors(
     primary = Purple80,
     secondary = PurpleGrey80,
-    tertiary = Pink80,
+
 )
 
-private val LightColorScheme = lightColorScheme(
+private val LightColorPallete = lightColors(
     primary = Purple40,
     secondary = PurpleGrey40,
-    tertiary = Pink40,
-    /* Other default colors to override
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color.White,
-    onSurface = Color.White,
-    */
+
 )
 
 @Composable
 fun RecipeTheme(
     darkTheme: Boolean = true,
-    content: @Composable () -> Unit
-) {
+    content: @Composable () -> Unit)
+{
     val colors = if(darkTheme) {
-        DarkColorScheme
+        DarkColorPallete
     }else {
-        LightColorScheme
+        LightColorPallete
     }
 
     MaterialTheme(
-        colorScheme = colors,
+        colors = colors,
         typography = Typography,
-        shapes = Shapes(),
         content = content
     )
 }
